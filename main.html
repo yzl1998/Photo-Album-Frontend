@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="data:,">
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>  
+    <script type="text/javascript" src="main.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <!-- apiGateway js sdk -->
+    <script type="text/javascript" src="apiGateway-js-sdk/lib/axios/dist/axios.standalone.js"></script>
+    <script type="text/javascript" src="apiGateway-js-sdk/lib/CryptoJS/rollups/hmac-sha256.js"></script>
+    <script type="text/javascript" src="apiGateway-js-sdk/lib/CryptoJS/rollups/sha256.js"></script>
+    <script type="text/javascript" src="apiGateway-js-sdk/lib/CryptoJS/components/hmac.js"></script>
+    <script type="text/javascript" src="apiGateway-js-sdk/lib/CryptoJS/components/enc-base64.js"></script>
+    <script type="text/javascript" src="apiGateway-js-sdk/lib/url-template/url-template.js"></script>
+    <script type="text/javascript" src="apiGateway-js-sdk/lib/apiGatewayCore/sigV4Client.js"></script>
+    <script type="text/javascript" src="apiGateway-js-sdk/lib/apiGatewayCore/apiGatewayClient.js"></script>
+    <script type="text/javascript" src="apiGateway-js-sdk/lib/apiGatewayCore/simpleHttpClient.js"></script>
+    <script type="text/javascript" src="apiGateway-js-sdk/lib/apiGatewayCore/utils.js"></script>
+    <script type="text/javascript" src="apiGateway-js-sdk/apigClient.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+              integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+
+    <title>Cloud Computing HW2</title>
+  
+  </head>
+
+  <body>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light light_cyan">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <span id="title">
+            AWS Photo Album 
+          </span>
+        </a>
+        
+      </div>
+    </nav>
+
+    <div class="container background_color"> 
+      <div class="row">
+        <div class="col-md-6">
+          <div class="top_margin"> 
+            <input id="input_box" class="form-control mr-sm-2" type="text" placeholder="Keywords (e.g. cats, show me images of cats)" aria-label="Search">
+          </div>
+          <div class="top_margin">
+            <button id="start_button" class="btn btn-primary my-2 my-sm-0" type="submit">Use Voice Recognition</button>
+          </div>
+          <div class="top_margin">
+            <button id="search_button" class="btn btn-info my-2 my-sm-0" type="submit">Search Photos</button>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="top_margin">
+            <input id="image_file" class="form-control" type="file">
+          </div>
+          <div class="top_margin">
+            <input id="image_labels" class="form-control mr-sm-2" type="text" placeholder="Photo Labels (e.g. cat, ragdoll)">
+          </div>
+          <div class="top_margin">
+            <button id="upload_button" class="btn btn-success my-2 my-sm-0" type="submit">Upload a Photo</button>
+          </div>
+          <div class="image-area mt-4">
+            <img id="frame" src="" class="img-fluid" />
+          </div>
+          <div id="upload_info"></div>
+        </div>
+      </div>
+      
+      <div id="search_results_container">
+      </div>
+    </div>
+  </div>
+
+  </body>
+</html>
+
+
+
+

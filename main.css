@@ -1,0 +1,59 @@
+#title{
+    color: darkcyan;
+    font-size: 30px;
+    font-weight: bold;
+    font-style:inherit;
+}
+
+#search_info{
+    padding-top: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: purple;
+}
+
+#upload_info{
+    padding-top: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: purple;
+}
+
+.container{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.light_cyan{
+    background-color: lightcyan;
+}
+
+.background_color{
+    background-color: rgb(250, 250, 250);
+}
+
+.highlight{
+    background-color: cyan !important;
+    display: inline !important;
+}
+
+.centered{    
+    display: flex;
+    justify-content: center;
+}
+
+
+.listing{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color:gray;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.top_margin{
+    margin-top: 10px !important;
+}
