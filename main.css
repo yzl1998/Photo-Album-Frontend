@@ -1,5 +1,5 @@
 #title{
-    color: purple;
+    color: blue;
     font-size: 30px;
     font-weight: bold;
     font-style:inherit;
@@ -39,7 +39,7 @@
     display: inline !important;
 }
 
-.centered{    
+.centered{
     display: flex;
     justify-content: center;
 }
